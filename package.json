@@ -1,0 +1,18 @@
+{
+  "name": "paraphernalia-api",
+  "version": "1.0.0",
+  "description": "api for paraphernalia",
+  "main": "index.js",
+  "scripts": {
+    "netlify": "netlify dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "airtable-node": "^0.1.20",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "netlify-cli": "^3.6.0"
+  }
+}
