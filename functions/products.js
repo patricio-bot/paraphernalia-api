@@ -7,10 +7,10 @@ const airtable = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY })
 
 exports.handler = async (event, context) => {
     try {
-        const { records } = await airtable.list()
+        const { records } = await airtable.list({ maxRecords: 200 })
 
         const products = records.map((product) => {
-
+            console.log(product);
             const { id } = product
             const { name, images, price, colors, company, description, category, shipping, featured } = product.fields
             const image = images[0].url
